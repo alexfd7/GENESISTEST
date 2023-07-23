@@ -1,6 +1,6 @@
 #  .NET Developer SR - B3.
 
-Um parágrafo da descrição do projeto vai aqui
+PROJETO DE AVALIAÇÃO PARA DESENVOLVEDOR
 
 
 
@@ -13,27 +13,29 @@ TargetFramework: net6.0
 
 ## ⚙️ Executando o projeto
 
-Explicar como executar os testes automatizados para este sistema.
+Após baixar o projeto em sua máquina
 
-### 🔩 Analise os testes de ponta a ponta
+### Visual Studio (1ª opção)
 
-Explique que eles verificam esses testes e porquê.
+Abrir arquivo da solução (.sln) pelo Visual Studio, definir o projeto WebAPI como projeto de inicialização e executar projeto.
 
-```
-Dar exemplos
-```
+### Visual Studio Code (2ª opção)
 
-### ⌨️ E testes de estilo de codificação
-
-Explique que eles verificam esses testes e porquê.
+Dentro da solução, acessar a pasta do projeto WebApi 
 
 ```
-Dar exemplos
+cd WebApi
+```
+
+Executar comando
+
+```
+dotnet watch run --launch-profile WebApiDevelopment
 ```
 
 ## 🛠️ Construído com
 
-Mencione as ferramentas que você usou para criar seu projeto
+Ferramentas utilizadas no projeto
 
 * [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - O framework web usado
 * [Maven](https://maven.apache.org/) - Gerente de Dependência
@@ -44,6 +46,6 @@ Mencione as ferramentas que você usou para criar seu projeto
 
 Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 
-[Alexandre Duarte](https://gist.github.com/lohhans) 
+[Alexandre Duarte](https://github.com/alexfd7) 
 
 ---
