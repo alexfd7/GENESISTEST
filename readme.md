@@ -7,7 +7,9 @@ PROJETO DE AVALIAÇÃO PARA DESENVOLVEDOR
 ### 📋 Pré-requisitos
 
 ```
-TargetFramework: net6.0
+.Net Core 6.0
+NodeJs
+Angular CLI
 
 ```
 
@@ -37,9 +39,10 @@ dotnet watch run --launch-profile WebApiDevelopment
 
 Ferramentas utilizadas no projeto
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - O framework web usado
-* [Maven](https://maven.apache.org/) - Gerente de Dependência
-* [ROME](https://rometools.github.io/rome/) - Usada para gerar RSS
+* [NetCore](http://www.dropwizard.io/1.0.2/docs/) - O framework web usado
+* [AngularCli](https://maven.apache.org/) - Gerente de Dependência
+* [SonarLint](https://rometools.github.io/rome/) - Usada para gerar RSS
+* [Swagger](https://rometools.github.io/rome/) - Usada para gerar RSS
 
 
 ## ✒️ Autores
