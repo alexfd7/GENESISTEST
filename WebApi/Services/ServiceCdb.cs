@@ -1,4 +1,6 @@
-﻿using WebApi.Interfaces;
+﻿using WebApi.Dto;
+using WebApi.Extensions;
+using WebApi.Interfaces;
 using WebApi.Models;
 
 namespace WebApi.Services
@@ -7,14 +9,14 @@ namespace WebApi.Services
     {
         public ServiceCdb() { }
 
-        public Cdb SimularCdb(decimal valorInicial, int prazo)
+        public SimulacaoResponseDto SimularCdb(SimulacaoRequestDto request)
         {
-            Cdb novaAplicacao = new(valorInicial, prazo);
+            Cdb novaAplicacao = request.DtoToModel();
 
             novaAplicacao.CalcularRendimento();
             novaAplicacao.Arrendondar();
 
-            return novaAplicacao;
+            return novaAplicacao.ModelToDto();
         }
 
     }

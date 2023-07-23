@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using WebApi.Dto;
 using WebApi.Interfaces;
 using WebApi.Models;
 
@@ -17,9 +18,9 @@ namespace WebApi.Controllers
         }
 
         [HttpPost]
-        public Cdb Simulacao(decimal valorInicial, int prazo)
+        public SimulacaoResponseDto Simulacao(SimulacaoRequestDto request)
         {
-            return _serviceCDB.SimularCdb(valorInicial, prazo);
+            return _serviceCDB.SimularCdb(request);
         }
     }
 }

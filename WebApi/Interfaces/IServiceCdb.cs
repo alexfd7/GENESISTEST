@@ -1,9 +1,10 @@
-﻿using WebApi.Models;
+﻿using WebApi.Dto;
+using WebApi.Models;
 
 namespace WebApi.Interfaces
 {
     public interface IServiceCdb
     {
-        public Cdb SimularCdb(decimal valorInicial, int prazo);
+        public SimulacaoResponseDto SimularCdb(SimulacaoRequestDto request);
     }
 }

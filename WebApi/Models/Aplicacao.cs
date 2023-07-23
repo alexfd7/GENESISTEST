@@ -25,6 +25,7 @@
         {
             this.RendimentoLiquido = Math.Round(this.RendimentoLiquido, 2);
             this.RendimentoBruto = Math.Round(this.RendimentoBruto, 2);
+            this.ValorInicial = Math.Round(this.ValorInicial, 2);
         }
 
 
