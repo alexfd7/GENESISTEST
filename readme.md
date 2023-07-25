@@ -13,9 +13,8 @@ Angular CLI
 
 ```
 
-## ⚙️ Executando o projeto
+## ⚙️ Executando o projeto - BackEnd
 
-Após baixar o projeto em sua máquina
 
 ### Visual Studio (1ª opção)
 
@@ -35,19 +34,49 @@ Executar comando
 dotnet watch run --launch-profile WebApiDevelopment
 ```
 
+## ⚙️ Executando o projeto - FrontEnd
+
+
+Dentro da solução, acessar a pasta do projeto AngularApp 
+
+```
+cd AngularApp
+```
+
+Para executar a aplicação, rodar comando angular cli
+
+```
+ng serve --open --configuration development
+```
+
+OU
+
+
+```
+npm run dev
+```
+
+## 🛠️ Executando Testes - FrontEnd
+
+Para executar testes
+```
+ng test
+```
+
+## 🛠️ Executando Testes - BackEnd
+
 ## 🛠️ Construído com
 
 Ferramentas utilizadas no projeto
 
-* [NetCore](http://www.dropwizard.io/1.0.2/docs/) - O framework web usado
-* [AngularCli](https://maven.apache.org/) - Gerente de Dependência
-* [SonarLint](https://rometools.github.io/rome/) - Usada para gerar RSS
-* [Swagger](https://rometools.github.io/rome/) - Usada para gerar RSS
+* [NetCore](https://learn.microsoft.com/en-us/dotnet/) - Uma plataforma para desenvolvimento de aplicativos em geral.
+* [AngularCli](https://angular.io/cli) - Ferramenta de shell de comando para inicializar, desenvolver, estruturar e manter  aplicativos em Angular
+* [SonarLint](https://www.sonarsource.com/products/sonarlint/) - Detecte problemas de codificação em tempo real e obtenha orientações claras sobre como corrigi-los.
+* [Swagger](https://swagger.io/) -  Ferramenta para ajudar a projetar e documentar APIs em escala.
+* [Karma](https://karma-runner.github.io) -  Ferramenta para testes unitários no front-end
 
 
 ## ✒️ Autores
-
-Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 
 [Alexandre Duarte](https://github.com/alexfd7) 
 

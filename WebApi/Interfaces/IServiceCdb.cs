@@ -5,6 +5,6 @@ namespace WebApi.Interfaces
 {
     public interface IServiceCdb
     {
-        public SimulacaoResponseDto SimularCdb(SimulacaoRequestDto request);
+        public SimuladorResponseDto SimularCdb(SimuladorRequestDto request);
     }
 }

@@ -9,7 +9,7 @@ namespace WebApi.Services
     {
         public ServiceCdb() { }
 
-        public SimulacaoResponseDto SimularCdb(SimulacaoRequestDto request)
+        public SimuladorResponseDto SimularCdb(SimuladorRequestDto request)
         {
             Cdb novaAplicacao = request.DtoToModel();
 

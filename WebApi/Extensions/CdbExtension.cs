@@ -5,14 +5,14 @@ namespace WebApi.Extensions
 {
     public static class CdbExtension
     {
-        public static Cdb DtoToModel(this SimulacaoRequestDto request)
+        public static Cdb DtoToModel(this SimuladorRequestDto request)
         {
             return new Cdb(request.ValorInicial, request.Prazo);
         }
 
-        public static SimulacaoResponseDto ModelToDto(this Cdb response)
+        public static SimuladorResponseDto ModelToDto(this Cdb response)
         {
-            return new SimulacaoResponseDto()
+            return new SimuladorResponseDto()
             {
                 ValorInicial = response.ValorInicial,
                 Prazo = response.Prazo,

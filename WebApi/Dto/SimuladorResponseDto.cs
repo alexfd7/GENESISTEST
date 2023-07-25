@@ -2,8 +2,8 @@
 
 namespace WebApi.Dto
 {    
-    [SwaggerSchema(Title = "SimulacaoResponse", Description = "Estrutura de dados de resposta da simulação de CDB")]
-    public class SimulacaoResponseDto
+    [SwaggerSchema(Title = "SimuladorResponse", Description = "Estrutura de dados de resposta da simulação de CDB")]
+    public class SimuladorResponseDto
     {
         public decimal ValorInicial { get; set; }
         public int Prazo { get; set; }

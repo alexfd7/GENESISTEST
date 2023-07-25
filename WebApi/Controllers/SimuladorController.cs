@@ -7,18 +7,18 @@ namespace WebApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class SimulacaoController : ControllerBase
+    public class SimuladorController : ControllerBase
     {
 
         private readonly IServiceCdb _serviceCDB;
 
-        public SimulacaoController(IServiceCdb serviceCDB)
+        public SimuladorController(IServiceCdb serviceCDB)
         {
             _serviceCDB = serviceCDB;
         }
 
         [HttpPost]
-        public SimulacaoResponseDto Simulacao(SimulacaoRequestDto request)
+        public SimuladorResponseDto Simulador(SimuladorRequestDto request)
         {
             return _serviceCDB.SimularCdb(request);
         }
