@@ -56,18 +56,21 @@ OU
 npm run dev
 ```
 
-## 🛠️ Executando Testes - FrontEnd
+## 🎯 Executando Testes - FrontEnd
 
 Para executar testes
 ```
 ng test
 ```
 
+OU
+
 ```
 ng test --code-coverage
 ```
 
-## 🛠️ Executando Testes - BackEnd
+## 🎯 Executando Testes - BackEnd
+
 
 ## 🛠️ Construído com
 
