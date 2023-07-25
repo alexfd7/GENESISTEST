@@ -56,14 +56,14 @@ OU
 npm run dev
 ```
 
-## 🛠️ Executando Testes - FrontEnd
+## 🎯 Executando Testes - FrontEnd
 
 Para executar testes
 ```
 ng test
 ```
 
-## 🛠️ Executando Testes - BackEnd
+## 🎯 Executando Testes - BackEnd
 
 ## 🛠️ Construído com
 
