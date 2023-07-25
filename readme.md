@@ -63,6 +63,10 @@ Para executar testes
 ng test
 ```
 
+```
+ng test --code-coverage
+```
+
 ## 🛠️ Executando Testes - BackEnd
 
 ## 🛠️ Construído com
