@@ -14,7 +14,7 @@ export class SimuladorComponent implements OnDestroy {
   model!: SimuladorRequest;
   response!: SimuladorResponse;
 
-  private simuladorSubscription! : Subscription;
+  private simuladorSubscription: Subscription = new Subscription;
 
   constructor(private simuladorService:SimuladorService){
     this.model = {
@@ -40,8 +40,8 @@ export class SimuladorComponent implements OnDestroy {
     })
   }
 
-  ngOnDestroy(): void {
-    this.simuladorSubscription.unsubscribe();
+  ngOnDestroy(): void {    
+      this.simuladorSubscription.unsubscribe();
   }
 
 }

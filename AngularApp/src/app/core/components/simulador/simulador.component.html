@@ -1,9 +1,9 @@
 <div class="container-fluid">
 
-    <div class="col-6">
-        <form class="row g-3 mt-3" #form="ngForm" (ngSubmit)="onFormSubmit()">
+    <div class="col-7">
+        <form class="row g-3 mt-3"  (ngSubmit)="onFormSubmit()">
             <div class="col-auto">
-                <label for="inputValorInicial" class="visually-hidden">Valor</label>
+                <label for="inputValorInicial" >Valor Inicial:</label>
                 <input type="text"  class="form-control" id="inputValorInicial"
                  name="inputValorInicial" [(ngModel)]="model.valorInicial" mask="separator.2" 
                  leadZero="true" 
@@ -11,16 +11,18 @@
                   placeholder="Valor Inicial">
             </div>
             <div class="col-auto">
-                <label for="inputPrazo" class="visually-hidden" >Prazo</label>
-                <input type="number" class="form-control" id="inputPrazo" name="inputPrazo" [(ngModel)]="model.prazo" placeholder="Prazo em meses">
+                <label for="inputPrazo">Prazo em Meses:</label>
+                <input type="text" class="form-control" id="inputPrazo" name="inputPrazo"
+                 [(ngModel)]="model.prazo" placeholder="Prazo em meses"mask="0000" [allowNegativeNumbers]="false">
             </div>
-            <div class="col-auto">
-                <button type="submit" class="btn btn-primary mb-3">Simular</button>
+            <div class="col-auto">                
+                <button type="submit" class="btn btn-primary mt-4">Simular</button>
             </div>
         </form>
     </div>
-    <div *ngIf="response" class="col-3">
-        <div class="row g-3 ">
+    <div *ngIf="response" class="col-7 card mt-3">
+        <div class="row g-3 card-body">
+          <h5 class="card-title">Resultado da Simulação</h5>
             <table aria-label ="Resultado Simulação" class="table">
                 <tbody>
                   <tr>
@@ -42,8 +44,9 @@
                 </tbody>
               </table>          
         </div>
-
     </div>
+    <div else ></div>
+
 
 
         

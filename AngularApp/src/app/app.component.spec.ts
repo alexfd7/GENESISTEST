@@ -1,14 +1,30 @@
-import { TestBed } from '@angular/core/testing';
+import { ComponentFixture,TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './core/components/navbar/navbar.component';
+import { SimuladorComponent } from './core/components/simulador/simulador.component';
+import { SimuladorService } from './core/services/simulador.service';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 describe('AppComponent', () => {
-  beforeEach(() => TestBed.configureTestingModule({
-    imports: [RouterTestingModule],
-    declarations: [AppComponent]
-  }));
 
-  it('should create the app', () => {
+  let component: AppComponent;
+  let fixture: ComponentFixture<AppComponent>;
+    
+ beforeEach(() => {
+    TestBed.configureTestingModule({
+      imports: [RouterTestingModule,HttpClientTestingModule,FormsModule,CommonModule],
+      declarations: [AppComponent,NavbarComponent,SimuladorComponent],      
+    }).compileComponents();
+    fixture = TestBed.createComponent(AppComponent);
+    component = fixture.componentInstance;    
+  });  
+
+    
+
+  it('Aplicação Iniciada', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
@@ -20,10 +36,5 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('angularApp');
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('angularApp app is running!');
-  });
+
 });

@@ -1,6 +1,10 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { SimuladorService } from './../../services/simulador.service';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { SimuladorComponent } from './simulador.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 describe('SimuladorComponent', () => {
   let component: SimuladorComponent;
@@ -8,14 +12,14 @@ describe('SimuladorComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [SimuladorComponent]
-    });
+      imports: [HttpClientTestingModule,FormsModule,CommonModule],
+      providers: [SimuladorService]
+    }).compileComponents();
     fixture = TestBed.createComponent(SimuladorComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+    component = fixture.componentInstance;    
   });
 
-  it('should create', () => {
+  it('Componente Criado', () => {
     expect(component).toBeTruthy();
   });
 });

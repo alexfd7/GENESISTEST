@@ -4,12 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './core/components/navbar/navbar.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { SimuladorComponent } from './core/components/simulador/simulador.component';
 import { HttpClientModule } from '@angular/common/http';
 
 import ptBr from '@angular/common/locales/pt';
-import { registerLocaleData } from '@angular/common';
+import { CommonModule, registerLocaleData } from '@angular/common';
 
 import { NgxMaskModule, IConfig } from 'ngx-mask'
 
@@ -22,12 +22,13 @@ export const options: Partial<null|IConfig> | (() => Partial<IConfig>) = null;
   declarations: [
     AppComponent,
     NavbarComponent,
-    SimuladorComponent    
+    SimuladorComponent,
+    NavbarComponent    
   ],
   imports: [
-    BrowserModule,
+    BrowserModule,CommonModule,
     AppRoutingModule,
-    FormsModule,
+    FormsModule,ReactiveFormsModule,
     HttpClientModule,
     NgxMaskModule.forRoot({dropSpecialCharacters:true}),   
   ],
