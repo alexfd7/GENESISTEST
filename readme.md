@@ -69,6 +69,9 @@ OU
 ng test --code-coverage
 ```
 
+![image](https://github.com/alexfd7/GENESISTEST/assets/1108262/29965718-846c-4c67-8bd9-674558d3bf65)
+
+
 ## 🎯 Executando Testes - BackEnd
 
 
