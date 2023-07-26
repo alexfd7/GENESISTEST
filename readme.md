@@ -97,6 +97,7 @@ Ferramentas utilizadas no projeto
 * [SonarLint](https://www.sonarsource.com/products/sonarlint/) - Detecte problemas de codificação em tempo real e obtenha orientações claras sobre como corrigi-los.
 * [Swagger](https://swagger.io/) -  Ferramenta para ajudar a projetar e documentar APIs em escala.
 * [Karma](https://karma-runner.github.io) -  Ferramenta para testes unitários no front-end
+* [FineCodeCoverage](https://marketplace.visualstudio.com/items?itemName=FortuneNgwenya.FineCodeCoverage) - Ferramenta de testes disponível para Visual Studio Community
 
 
 ## ✒️ Autores
