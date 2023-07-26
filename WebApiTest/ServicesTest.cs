@@ -21,7 +21,7 @@ namespace WebApiTest
         }
 
         [Test]
-        public void callSimuladorController()
+        public void SimuladorController()
         {
             var service = new ServiceCdb();
             var result = _serviceCDB.Object.SimularCdb(new SimuladorRequestDto { ValorInicial = 1000, Prazo = 10 });
