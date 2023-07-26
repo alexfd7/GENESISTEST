@@ -11,6 +11,7 @@
             this.Nome = nome;
         }
 
+        //Método recriado pelas classes filhas. Ver class IR.cs
         public virtual decimal CalcularImposto(decimal valor, int prazo)
         {
             return valor * ALIQUOTA_PADRAO;

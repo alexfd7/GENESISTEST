@@ -15,10 +15,12 @@
             this.Prazo = prazo;
 
         }
-
+        
+        //Método recriado pelas classes filhas. Ver classe CDB.cs
         public virtual void CalcularRendimento()
         {
             this.RendimentoBruto = this.ValorInicial * RENDIMENTO_PADRAO;
+            this.RendimentoLiquido = this.RendimentoBruto;
         }
 
         public virtual void Arrendondar()

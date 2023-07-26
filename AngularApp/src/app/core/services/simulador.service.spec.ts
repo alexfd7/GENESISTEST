@@ -1,4 +1,3 @@
-import { SimuladorResponse } from './../models/simulador-response';
 import { TestBed } from '@angular/core/testing';
 
 import { SimuladorService } from './simulador.service';
@@ -30,8 +29,7 @@ describe('SimuladorService', () => {
     done();
     service.realizarSimulacao(model)
     .subscribe({
-      next: (data) => {                  
-        data.valorInicial.toPrecision(2);
+      next: (data) => {                          
         done();
       },
       error: (e) =>{

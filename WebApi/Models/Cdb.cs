@@ -4,7 +4,7 @@
     {
         private const decimal CDI = 0.009M;
         private const decimal TB = 1.08M;
-        Ir Imposto { get; set; }
+        public Ir Imposto { get; set; }
 
         public Cdb(decimal valor, int prazo) : base(valor, prazo)
         {

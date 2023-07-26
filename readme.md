@@ -43,6 +43,12 @@ Dentro da solução, acessar a pasta do projeto AngularApp
 cd AngularApp
 ```
 
+Baixar e instalar as dependências do projeto
+
+```
+npm install
+```
+
 Para executar a aplicação, rodar comando angular cli
 
 ```
