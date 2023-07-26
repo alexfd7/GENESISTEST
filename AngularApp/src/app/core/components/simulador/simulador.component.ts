@@ -31,7 +31,8 @@ export class SimuladorComponent implements OnDestroy {
           valorInicial: data.valorInicial,
           prazo: data.prazo,
           rendimentoBruto: data.rendimentoBruto,
-          rendimentoLiquido: data.rendimentoLiquido
+          rendimentoLiquido: data.rendimentoLiquido,
+          mensagem : data.mensagem
         }
       },
       error: (e) =>{

@@ -20,6 +20,7 @@ namespace WebApi.Controllers
         [HttpPost]
         public SimuladorResponseDto Simulador(SimuladorRequestDto request)
         {
+
             return _serviceCDB.SimularCdb(request);
         }
     }

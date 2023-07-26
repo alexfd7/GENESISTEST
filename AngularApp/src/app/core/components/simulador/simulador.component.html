@@ -20,35 +20,39 @@
             </div>
         </form>
     </div>
-    <div *ngIf="response" class="col-7 card mt-3">
+
+
+    <div *ngIf="response && !response.mensagem" class="col-7 card mt-3">
         <div class="row g-3 card-body">
           <h5 class="card-title">Resultado da Simulação</h5>
-            <table aria-label ="Resultado Simulação" class="table">
-                <tbody>
-                  <tr>
-                    <th scope="row">Valor Inicial:</th>
-                    <td>{{response.valorInicial | currency : 'BRL'}}</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Prazo:</th>
-                    <td>{{response.prazo}} meses</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Rendimento Bruto:</th>
-                    <td> {{response.rendimentoBruto | currency : 'BRL'}}</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Rendimento Líquido:</th>
-                    <td> {{response.rendimentoLiquido | currency : 'BRL'}}</td>
-                  </tr>                                                      
-                </tbody>
-              </table>          
+          <table aria-label ="Resultado Simulação" class="table">
+              <tbody>
+                <tr>
+                  <th scope="row">Valor Inicial:</th>
+                  <td>{{response.valorInicial | currency : 'BRL'}}</td>
+                </tr>
+                <tr>
+                  <th scope="row">Prazo:</th>
+                  <td>{{response.prazo}} meses</td>
+                </tr>
+                <tr>
+                  <th scope="row">Rendimento Bruto:</th>
+                  <td> {{response.rendimentoBruto | currency : 'BRL'}}</td>
+                </tr>
+                <tr>
+                  <th scope="row">Rendimento Líquido:</th>
+                  <td> {{response.rendimentoLiquido | currency : 'BRL'}}</td>
+                </tr>                                                      
+              </tbody>
+          </table>                
         </div>
     </div>
-    <div else ></div>
+    <div *ngIf="response && response.mensagem"  class="alert alert-warning alert-dismissible fade show mt-3" role="alert">
+      {{response.mensagem}}
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div> 
 
 
 
-        
 
 </div>

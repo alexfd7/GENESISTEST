@@ -21,7 +21,7 @@
             }
 
             this.RendimentoBruto = rendimentoMensal;
-            this.RendimentoLiquido = this.RendimentoBruto - Imposto.CalcularImposto(this.RendimentoBruto, this.Prazo);
+            this.RendimentoLiquido = this.RendimentoBruto - Imposto.CalcularImposto((this.RendimentoBruto - this.ValorInicial), this.Prazo);
 
         }
 

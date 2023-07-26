@@ -9,5 +9,6 @@ namespace WebApi.Dto
         public int Prazo { get; set; }
         public decimal RendimentoLiquido { get; set; }
         public decimal RendimentoBruto { get; set; }
+        public string mensagem { get; set; }
     }
 }
