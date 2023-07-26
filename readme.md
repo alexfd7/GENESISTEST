@@ -64,6 +64,8 @@ npm run dev
 
 ## 🎯 Executando Testes - FrontEnd
 
+Utilizado  [Karma](https://karma-runner.github.io) -  Ferramenta para testes unitários no front-end
+
 Para executar testes
 ```
 ng test
@@ -79,6 +81,11 @@ ng test --code-coverage
 
 
 ## 🎯 Executando Testes - BackEnd
+
+Utilizado [FineCodeCoverage](https://marketplace.visualstudio.com/items?itemName=FortuneNgwenya.FineCodeCoverage) - Ferramenta de testes disponível para Visual Studio Community
+
+
+![image](https://github.com/alexfd7/GENESISTEST/assets/1108262/104b1798-a871-40a1-bc2a-71071e6ae4ae)
 
 
 ## 🛠️ Construído com
